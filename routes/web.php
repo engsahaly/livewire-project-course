@@ -14,18 +14,45 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
+
+// require __DIR__.'/auth.php';
+
+/**
+ * Front Routes
+ */
+Route::prefix('/')->name('front.')->group(function () {
+
+    // ============================================ INDEX PAGE
+    Route::view('', 'front.index')->name('index');
+
+    // ============================================ ABOUT PAGE
+    Route::view('about', 'front.about')->name('about');
+
+    // ============================================ CONTACT PAGE
+    Route::view('contact', 'front.contact')->name('contact');
+
+    // ============================================ PROJECTS PAGE
+    Route::view('projects', 'front.projects')->name('projects');
+
+    // ============================================ SERVICES PAGE
+    Route::view('services', 'front.services')->name('services');
+
+    // ============================================ TEAM PAGE
+    Route::view('team', 'front.team')->name('team');
+
+    // ============================================ TESTMONIALS PAGE
+    Route::view('testmonials', 'front.testmonials')->name('testmonials');
 });
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';
