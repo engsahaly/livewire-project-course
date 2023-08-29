@@ -56,3 +56,14 @@ Route::prefix('/')->name('front.')->group(function () {
     // ============================================ TESTMONIALS PAGE
     Route::view('testmonials', 'front.testmonials')->name('testmonials');
 });
+
+
+
+/**
+ * Admin Routes
+ */
+Route::prefix('/admin/')->name('admin.')->group(function () {
+
+    // ============================================ INDEX PAGE
+    Route::view('', 'admin.index')->name('index');
+});
