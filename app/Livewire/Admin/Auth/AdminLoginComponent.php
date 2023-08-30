@@ -2,15 +2,23 @@
 
 namespace App\Livewire\Admin\Auth;
 
+use App\Http\Requests\Auth\LoginRequest;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Livewire\Attributes\Rule;
 
 class AdminLoginComponent extends Component
 {
+    // #[Rule('required|string|email|min:50')]
     public $email;
+
+    // #[Rule('required')]
     public $password;
+
+    // #[Rule('nullable')]
     public $remember;
+
 
     public function rules()
     {
@@ -20,6 +28,11 @@ class AdminLoginComponent extends Component
             'remember' => 'nullable',
         ];
     }
+
+    // public function rules()
+    // {
+    //     return (new LoginRequest())->rules();
+    // }
 
     public function submit()
     {
