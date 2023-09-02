@@ -21,6 +21,6 @@ class SkillsData extends Component
 
     public function render()
     {
-        return view('admin.skills.skills-data', ['data' => Skill::where('name', 'like', '%' . $this->search . '%')->paginate(1)]);
+        return view('admin.skills.skills-data', ['data' => Skill::where('name', 'like', '%' . $this->search . '%')->paginate(10)]);
     }
 }

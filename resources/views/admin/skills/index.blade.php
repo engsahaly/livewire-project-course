@@ -23,6 +23,8 @@
                 @livewire('admin.skills.skills-data')
             </div>
         </div>
+
+        @livewire('admin.skills.skills-update')
     </div>
     <!-- / Content -->
 @endsection
