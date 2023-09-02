@@ -26,6 +26,7 @@
 
         @livewire('admin.skills.skills-update')
         @livewire('admin.skills.skills-delete')
+        @livewire('admin.skills.skills-show')
     </div>
     <!-- / Content -->
 @endsection

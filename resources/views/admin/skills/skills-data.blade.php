@@ -37,6 +37,11 @@
                                             <i class="bx bx-trash me-1"></i>
                                             Delete
                                         </a>
+                                        <a class="dropdown-item" href="#"
+                                            wire:click.prevent="$dispatch('skillShow', { id: {{ $record->id }} })">
+                                            <i class="bx bx-trash me-1"></i>
+                                            Show
+                                        </a>
                                     </div>
                                 </div>
                             </td>
