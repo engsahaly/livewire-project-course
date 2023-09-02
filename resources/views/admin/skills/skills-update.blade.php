@@ -1,4 +1,4 @@
-<x-edit-modal title="Edit Skill 22">
+<x-edit-modal title="Edit Skill">
     <div class="col-md-6 mb-0">
         <label class="form-label">Name</label>
         <input type="text" class="form-control" placeholder="Name" wire:model='name' />

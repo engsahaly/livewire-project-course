@@ -1,4 +1,4 @@
-<x-create-modal title="Add New Skill 33">
+<x-create-modal title="Add New Skill">
     <div class="col-md-6 mb-0">
         <label class="form-label">Name</label>
         <input type="text" class="form-control" placeholder="Name" wire:model='name' />
