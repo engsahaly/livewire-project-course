@@ -10,7 +10,7 @@
 
         <div class="card mb-4">
             <div class="card-body">
-                Skills page here
+                @livewire('admin.skills.skills-data')
             </div>
         </div>
     </div>
