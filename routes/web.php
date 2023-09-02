@@ -70,6 +70,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         // ============================================ SETTINGS PAGE
         Route::view('settings', 'admin.settings.index')->name('settings');
+
+        // ============================================ SKILLS PAGE
+        Route::view('skills', 'admin.skills.index')->name('skills');
     });
 
     // ============================================ LOGIN PAGE
