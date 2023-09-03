@@ -73,6 +73,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         // ============================================ SKILLS PAGE
         Route::view('skills', 'admin.skills.index')->name('skills');
+
+        // ============================================ SUBSCRIBERS PAGE
+        Route::view('subscribers', 'admin.subscribers.index')->name('subscribers');
     });
 
     // ============================================ LOGIN PAGE
