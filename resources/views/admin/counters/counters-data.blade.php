@@ -8,8 +8,9 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th width="45%">Name</th>
-                        <th width="45%">Progress</th>
+                        <th width="50%">Name</th>
+                        <th width="20%">Count</th>
+                        <th width="20%">Icon</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -19,7 +20,10 @@
                             <td>
                                 <strong>{{ $record->name }}</strong>
                             </td>
-                            <td>{{ $record->progress }}</td>
+                            <td>{{ $record->count }}</td>
+                            <td>
+                                <i class="{{ $record->icon }} text-secondary mb-3"></i>
+                            </td>
                             <td>
                                 <div class="dropdown">
                                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
@@ -28,19 +32,14 @@
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#"
-                                            wire:click.prevent="$dispatch('skillUpdate', { id: {{ $record->id }} })">
+                                            wire:click.prevent="$dispatch('counterUpdate', { id: {{ $record->id }} })">
                                             <i class="bx bx-edit-alt me-1"></i>
                                             Edit
                                         </a>
                                         <a class="dropdown-item" href="#"
-                                            wire:click.prevent="$dispatch('skillDelete', { id: {{ $record->id }} })">
+                                            wire:click.prevent="$dispatch('counterDelete', { id: {{ $record->id }} })">
                                             <i class="bx bx-trash me-1"></i>
                                             Delete
-                                        </a>
-                                        <a class="dropdown-item" href="#"
-                                            wire:click.prevent="$dispatch('skillShow', { id: {{ $record->id }} })">
-                                            <i class="bx bx-trash me-1"></i>
-                                            Show
                                         </a>
                                     </div>
                                 </div>

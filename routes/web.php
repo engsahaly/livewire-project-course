@@ -76,6 +76,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         // ============================================ SUBSCRIBERS PAGE
         Route::view('subscribers', 'admin.subscribers.index')->name('subscribers');
+
+        // ============================================ COUNTERS PAGE
+        Route::view('counters', 'admin.counters.index')->name('counters');
     });
 
     // ============================================ LOGIN PAGE
