@@ -85,6 +85,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         // ============================================ MESSAGES PAGE
         Route::view('messages', 'admin.messages.index')->name('messages');
+
+        // ============================================ CATEGORIES PAGE
+        Route::view('categories', 'admin.categories.index')->name('categories');
     });
 
     // ============================================ LOGIN PAGE
