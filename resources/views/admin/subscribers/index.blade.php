@@ -12,11 +12,11 @@
 
         <div class="card mb-4">
             <div class="card-body">
-                {{-- @livewire('admin.skills.skills-data') --}}
+                @livewire('admin.subscribers.subscribers-data')
             </div>
         </div>
 
-        {{-- @livewire('admin.skills.skills-delete') --}}
+        @livewire('admin.subscribers.subscribers-delete')
     </div>
     <!-- / Content -->
 @endsection
