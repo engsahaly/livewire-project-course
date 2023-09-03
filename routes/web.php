@@ -88,6 +88,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         // ============================================ CATEGORIES PAGE
         Route::view('categories', 'admin.categories.index')->name('categories');
+
+        // ============================================ PROJECTS PAGE
+        Route::view('projects', 'admin.projects.index')->name('projects');
     });
 
     // ============================================ LOGIN PAGE
