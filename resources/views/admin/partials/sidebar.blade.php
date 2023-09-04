@@ -76,7 +76,7 @@
         <!-- Skills -->
         <li class="menu-item @yield('skills-active')">
             <a href="{{ route('admin.skills') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">skills</div>
             </a>
         </li>
@@ -84,7 +84,7 @@
         <!-- SUBSCRIBERS -->
         <li class="menu-item @yield('subscribers-active')">
             <a href="{{ route('admin.subscribers') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Subscribers</div>
             </a>
         </li>
@@ -92,7 +92,7 @@
         <!-- COUNTERS -->
         <li class="menu-item @yield('counters-active')">
             <a href="{{ route('admin.counters') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Counters</div>
             </a>
         </li>
@@ -100,7 +100,7 @@
         <!-- SERVICES -->
         <li class="menu-item @yield('services-active')">
             <a href="{{ route('admin.services') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Services</div>
             </a>
         </li>
@@ -108,7 +108,7 @@
         <!-- MESSAGES -->
         <li class="menu-item @yield('messages-active')">
             <a href="{{ route('admin.messages') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Messages</div>
             </a>
         </li>
@@ -116,7 +116,7 @@
         <!-- CATEGORIES -->
         <li class="menu-item @yield('categories-active')">
             <a href="{{ route('admin.categories') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Categories</div>
             </a>
         </li>
@@ -124,7 +124,7 @@
         <!-- PROJECTS -->
         <li class="menu-item @yield('projects-active')">
             <a href="{{ route('admin.projects') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Projects</div>
             </a>
         </li>
